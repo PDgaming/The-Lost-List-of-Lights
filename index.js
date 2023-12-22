@@ -73,13 +73,13 @@ async function scene4() {
     rainbowTitle.stop();
     await animateText(`${chalk.yellow(`With all the gingerbread cookies recovered, Jingle and Rani return to the mango tree. The Monkey Spirit uses them to reassemble the Naughty and Nice List, revealing a heartwarming surprise: every child in India, naughty or nice, deserves a Christmas miracle.
 Jingle, filled with gratitude and newfound knowledge, delivers the gifts with Rani by his side, celebrating Christmas under the mango tree with the entire village. They learn that the magic of Christmas isn't about list-making or tradition, but about the joy of giving, the warmth of community, and the love that transcends cultural differences.\n`)}`)
-    await sleep(67500);
+    await sleep(70000);
     const rainbowTitle2 = chalkAnimation.rainbow("Thank you so much for playing this game!");
     await sleep(3000);
     rainbowTitle2.stop();
 };
 
-// await scene1();
-// await scene2();
-// await scene3();
+await scene1();
+await scene2();
+await scene3();
 await scene4();
