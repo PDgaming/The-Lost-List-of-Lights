@@ -64,7 +64,7 @@ async function scene3() {
     const rainbowTitle = chalkAnimation.rainbow("Scene 3: Lessons:");
     await sleep(1000);
     rainbowTitle.stop();
-    await animateText(`Rani, who was initially skeptical about Christmas, begins to appreciate its spirit of giving and inclusivity, while Jingle learns to understand and respect the diverse Christmas traditions of India.
+    await animateText("Rani, who was initially skeptical about Christmas, begins to appreciate its spirit of giving and inclusivity, while Jingle learns to understand and respect the diverse Christmas traditions of India.")
     await sleep(40500);
 };
 
