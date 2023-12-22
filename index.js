@@ -43,8 +43,8 @@ async function scene1() {
     await sleep(1000);
     rainbowTitle.stop();
     await animateText(`It's Christmas Eve at the North Pole, and Jingle is bursting with excitement. Today, he gets to deliver presents in India, a land he's dreamt of visiting for years. Dressed in his bright kurta and festive turban, he hops aboard the miniature reindeer-drawn rickshaw gifted to him by the Indian Ambassador.
-As they soar through the snowy sky, a mischievous reindeer named Tikka decides to chase snowflakes, causing the rickshaw to bump into a cloud and tumble towards Earth! Jingle lands with a soft thud in a vibrant Indian village, but amidst the confusion, he realizes the worst has happened - ${chalk.red("The Naughty and Nice List has vanished!")}`)
-    await sleep(62000);
+As they soar through the snowy sky, a mischievous reindeer named Tikka decides to chase snowflakes, causing the rickshaw to bump into a cloud and tumble towards Earth! Jingle lands with a soft thud in a vibrant Indian village, but amidst the confusion, he realizes the worst has happened - ${chalk.red("The Naughty and Nice List has vanished!")}\n`)
+    await sleep(65000);
 };
 
 async function scene2() {
