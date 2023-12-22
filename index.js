@@ -53,7 +53,7 @@ async function scene2() {
     rainbowTitle.stop();
     await animateText(`Jingle stumbles upon Rani, a resourceful village child who immediately offers to help. Together, they follow a trail of twinkling lights from the wreckage, leading them to an ancient mango tree known for its magical aura. Rani explains that the tree spirits might hold the key to finding the lost list.
 Inside the tree's hollow trunk, they discover a mischievous Monkey Spirit sporting a Santa hat. He reveals that ${chalk.red("the list has scattered into magical gingerbread cookies")}, each representing a different region of India and holding fragments of the Naughty and Nice information. ${chalk.green("To retrieve them, Jingle and Rani must embark on a festive quest across the country.")}`);
-    await sleep(64000);
+    await sleep(64500);
 }
 
 // console.log("They face a hidden challenge - a grumpy elf named Grumpo, who believes Christmas should only be celebrated in traditional ways and tries to sabotage their journey.")
