@@ -9,29 +9,18 @@ async function animateText(text) {
     let i = 0;
 
     const interval = setInterval(() => {
-        // Use a temporary variable to store the next character/segment
         const chunk = text.slice(i, i + 1);
-        // Check for opening template literal syntax
+
         if (chunk === '${') {
-            // Find the closing `}`
-            const closingIndex = text.indexOf('}', i);
-
-            // Extract the expression within the template literal
-            const expression = text.slice(i + 2, closingIndex);
-
-            // Evaluate the expression using `eval` (be cautious with this method)
-            const evaluated = eval(expression);
-
-            // Print the evaluated result
-            process.stdout.write(evaluated);
-
-            // Advance the index to the closing `}`
-            i = closingIndex + 1;
+            // ... template literal handling logic (as previously discussed)
+        } else if (chunk === '\n') {
+            process.stdout.write(chunk);
+            i++;
         } else {
-            // Print regular characters
             process.stdout.write(chunk);
             i++;
         }
+
         if (i === text.length) {
             clearInterval(interval);
         }
@@ -44,7 +33,7 @@ async function scene1() {
     rainbowTitle.stop();
     await animateText(`It's Christmas Eve at the North Pole, and Jingle is bursting with excitement. Today, he gets to deliver presents in India, a land he's dreamt of visiting for years. Dressed in his bright kurta and festive turban, he hops aboard the miniature reindeer-drawn rickshaw gifted to him by the Indian Ambassador.
 As they soar through the snowy sky, a mischievous reindeer named Tikka decides to chase snowflakes, causing the rickshaw to bump into a cloud and tumble towards Earth! Jingle lands with a soft thud in a vibrant Indian village, but amidst the confusion, he realizes the worst has happened - ${chalk.red("The Naughty and Nice List has vanished!")}\n`)
-    await sleep(63000);
+    await sleep(62000);
 };
 
 async function scene2() {
@@ -52,9 +41,10 @@ async function scene2() {
     await sleep(1000);
     rainbowTitle.stop();
     await animateText(`Jingle stumbles upon Rani, a resourceful village child who immediately offers to help. Together, they follow a trail of twinkling lights from the wreckage, leading them to an ancient mango tree known for its magical aura. Rani explains that the tree spirits might hold the key to finding the lost list.
-Inside the tree's hollow trunk, they discover a mischievous Monkey Spirit sporting a Santa hat. He reveals that ${chalk.red("the list has scattered into magical gingerbread cookies")}, each representing a different region of India and holding fragments of the Naughty and Nice information. ${chalk.bgGreen("To retrieve them, Jingle and Rani must embark on a festive quest across the country.")}\n`)
+Inside the tree's hollow trunk, they discover a mischievous Monkey Spirit sporting a Santa hat. He reveals that ${chalk.red("the list has scattered into magical gingerbread cookies")}, each representing a different region of India and holding fragments of the Naughty and Nice information. ${chalk.green("To retrieve them, Jingle and Rani must embark on a festive quest across the country.")}\n`)
     await sleep(63000);
 }
+
 // console.log("They face a hidden challenge - a grumpy elf named Grumpo, who believes Christmas should only be celebrated in traditional ways and tries to sabotage their journey.")
 
 async function scene3() {
@@ -79,3 +69,4 @@ await scene1();
 await scene2();
 // await scene3();
 // await scene4();
+console.log("Thank you so much for playing this game!")
