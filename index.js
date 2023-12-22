@@ -1,12 +1,14 @@
 import chalk from 'chalk';
 import chalkAnimation from 'chalk-animation';
 
+
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function animateText(text) {
     let i = 0;
+
 
     const interval = setInterval(() => {
         const chunk = text.slice(i, i + 1);
@@ -63,7 +65,6 @@ async function scene3() {
     await sleep(1000);
     rainbowTitle.stop();
     await animateText(`Rani, who was initially skeptical about Christmas, begins to appreciate its spirit of giving and inclusivity, while Jingle learns to understand and respect the diverse Christmas traditions of India.
- ${chalk.red("Jingle and Rani must use their coding skills and newfound understanding of Indian traditions to win him over and teach him the true meaning of Christmas.")}\n`)
     await sleep(40500);
 };
 
